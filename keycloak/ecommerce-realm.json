@@ -1,0 +1,26 @@
+{
+  "realm": "ecommerce",
+  "enabled": true,
+  "clients": [
+    {
+      "clientId": "private-app",
+      "name": "Ecommerce API admin client",
+      "enabled": true,
+      "clientAuthenticatorType": "client-secret",
+      "secret": "local-dev-private-app-secret",
+      "serviceAccountsEnabled": true,
+      "standardFlowEnabled": false,
+      "directAccessGrantsEnabled": false,
+      "authorizationServicesEnabled": false
+    }
+  ],
+  "roles": {
+    "realm": [
+      { "name": "USER" },
+      { "name": "CUSTOMER" },
+      { "name": "STAFF" },
+      { "name": "ADMIN" },
+      { "name": "category:read" }
+    ]
+  }
+}
